@@ -1,0 +1,2 @@
+https://api.openweathermap.org/data/2.5/weather?q=Pakistan&units=metric&appid=23023689f754c758f5fdb16bd8fb4041
+

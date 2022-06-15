@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Fasthand&family=Joan&family=Kdam+Thmor+Pro&family=Mina&family=Montserrat:wght@300&family=Nuosu+SIL&family=Odibee+Sans&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ..................aos animation links..................... -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+
+<body>
+
+    {{>nav}}
+
+    <div class="weather-container">
+        <div class="weather-search">
+            <form class="form">
+                    <input id="input-text" type="text" placeholder="Enter City Name">
+
+                    <input type="submit" value="Search" id="submitBtn">
+            </form>
+
+            {{!-- <div class="w-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div> --}}
+        </div>
+    </div>
+
+    <div class="w-contant tempInfo">
+        <div class="day-date">
+            <div class="day" style="color: #fff;"></div>
+            <div class="date" style="color: #fff;"></div>
+        </div>
+        <div class="location" style="color: #fff;"> <span class="gujranwala" style="color: #fff;"> </span><span class="country"  style="color: #fff;"></span></div>
+            
+
+
+        <div class="zone">
+        <div><p id="getoutputhere" style="font-size:14px ; color: white;"></p></div>    
+            <div class="cloud" style="color: #fff;"></div>
+            <div class="temp" style="color: #fff;"><span class="Tempa" style="color: #fff;" > Temp</span>  <span style="color: #fff;">&deg;C</span> </div> 
+        </div>
+    </div>
+
+
+
+    {{>footer}}
+
+    {{>scriptlink}}
+    <script src="jsfile/main.js"></script>
+
+</body>
+
+</html>

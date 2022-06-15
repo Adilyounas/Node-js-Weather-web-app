@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Cinzel&family=Dancing+Script:wght@600&family=Emilys+Candy&family=Fasthand&family=Joan&family=Kdam+Thmor+Pro&family=Mina&family=Montserrat:wght@300&family=Nuosu+SIL&family=Odibee+Sans&family=Orbitron:wght@900&family=Rubik+Glitch&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+
+.X-p{
+    font-family: 'Cardo', serif;
+}
+.papa{
+    height: 100%;
+}
+
+.list-item{
+    list-style: none;
+    display: inline;
+    margin-left: 3rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+}
+
+.list-item a{
+    text-decoration: none;
+}
+
+.logo-img{
+    height: 2.6rem;
+}
+
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ec81172b;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px 0px 50px 4px;
+    padding: 5px;
+    margin-top: 1.5%;
+    /* border: 2px solid rebeccapurple; */
+}
+
+
+/* .............................. */
+
+.main-Container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    height: 80vh;
+    /* border: 2px solid rgb(243, 1, 1); */
+    gap: 1rem;
+    padding: 1.5rem 0;
+}
+
+
+.progress{
+    line-height: 4rem;
+    font-size: 3rem;
+    font-family: 'Emilys Candy', cursive;
+}
+.text{
+    
+    /* background: rebeccapurple; */
+    grid-column: 1/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'BaroneysTextured', serif;
+    text-align: center;
+}
+
+.main-image{
+    /* background: red; */
+    grid-column: 7/ -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.paragraph{
+    margin: 2rem;
+}
+
+
+.png1{
+    height: 27rem;
+}
+
+.copyright{
+    color: #fff;
+}
+.footer{
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top:auto;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:1080px) {
+    .main-Container{
+
+        grid-template-rows: repeat(12,1fr);
+        grid-template-columns: none;
+        margin-top: 6rem;
+        
+    }  
+
+    .text{
+    
+        /* background: rebeccapurple; */
+        grid-row: 1/3;
+        text-align: center;
+        margin: 0 10rem;
+        
+    }
+    
+    .main-image{
+        /* background: red; */
+        grid-row: 3/ -1;
+    
+    
+    }
+
+    .png1{
+        height: 20rem;
+        margin-top: 15%;
+    }
+}
+
+
+@media screen and (max-width:760px){
+    .png1{
+        height: 18rem;
+        margin-top: 18%;
+    }
+
+    .main-Container{
+
+        grid-template-rows: repeat(12,1fr);
+        grid-template-columns: none;
+        margin-top: 8rem;
+        
+    }  
+
+    .text{
+    
+        /* background: rebeccapurple; */
+        grid-row: 1/3;
+        text-align: center;
+        margin: 0 5rem;
+        
+    }
+    
+}
+
+
+/* ..........................404............... */
+
+
+.error-png img{
+    width: 58%;
+    height: auto;
+}
+
+.error-png{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* .....................................weather page css................ */
+
+
+.weather-container {
+    width: 35%;
+    margin: 2rem auto 0 auto;
+    background: #000000;
+    padding: .8rem;
+    border-radius: 30px;
+    font-family: 'Nuosu SIL', serif;
+}
+
+
+
+
+
+.w-btn {
+    padding: 1rem 3rem 1rem;
+    border-radius: 33px;
+    color: white;
+}
+
+#input-text {
+    padding: 9px 0px;
+    width: 23rem;
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-weight: bolder;
+
+
+}
+
+
+#submitBtn[type="submit"] {
+    padding: 7px 16px 6px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: inherit;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+#submitBtn {
+    padding: 7px 16px 6px;
+    background: black;
+    color: white;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: 'Cardo', serif;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tempInfo {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+
+
+}
+
+.w-contant {
+    height: 56vh;
+    width: 20%;
+    margin: 2rem auto;
+    background: hsl(127, 9%, 41%);
+    border-radius: 10px;
+}
+
+.day-date {
+    background-color: #040303;
+    grid-row: 1/3;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day-date:hover {
+    background-color: #040303;
+    grid-row: 1/3;
+    filter: drop-shadow(0px 1px 6px pink);
+}
+
+.location {
+    background-color: #041C32;
+    grid-row: 3/5;
+
+}
+
+.location:hover {
+    filter: drop-shadow(0px 1px 6px pink);
+
+
+}
+
+.zone {
+    grid-row: 5/-1;
+    filter: drop-shadow(0px 6px 7px pink);
+    
+}
+
+.zone{
+    background-color: #04293A;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    font-size: 2rem;
+    font-family: 'Nuosu SIL', serif;
+
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nuosu SIL', serif;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nuosu SIL', serif;
+}
+
+.day{
+    font-family: 'Nuosu SIL', serif;
+}

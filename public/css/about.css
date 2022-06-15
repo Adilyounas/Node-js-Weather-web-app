@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ec81172b;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px 0px 50px 4px;
+    padding: 5px;
+    margin-top: 1.5%;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.body{
+    height: 100%;
+}
+.papajani{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    place-content: center;
+    place-items: center;
+    /* border: 2px solid rebeccapurple; */
+    height: 80vh;
+}
+
+.boxA{
+    grid-column: 2/7;
+    text-align: center;
+    width: 34rem;
+    margin-left: 37px;
+}
+.large{
+    grid-column: 7/-1;
+}
+
+.boxA p{
+    padding: 0 6rem
+}
+.working{
+    line-height: 7.8rem;
+    font-family: 'Cardo', serif;
+}
+
+.X-p{
+    font-family: 'Cardo', serif;
+}
+
+.mern{
+
+    color: #dc4345;
+    filter: drop-shadow(-2px 1px 1px black);
+    /*  */
+    /* ...........................important point 👿 */
+}
+
+
+.large img{
+   height: 25rem;
+   border-bottom: 1px solid black;
+}
+
+
+
+
+/* ........................ */
+
+
+.list-item{
+    list-style: none;
+    display: inline;
+    margin-left: 3rem;
+    font-family: 'Nuosu SIL', serif;
+    font-size: 1.2rem;
+}
+
+.list-item a{
+    text-decoration: none;
+}
+
+.logo-img{
+    height: 2.6rem;
+}
+
+.e1:active{
+    background: rebeccapurple;
+}
+
+
